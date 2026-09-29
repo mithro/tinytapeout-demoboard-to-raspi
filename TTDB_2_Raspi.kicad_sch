@@ -5,8 +5,9 @@
 	(uuid "a35e0498-1c0c-4b46-9908-8b1ab8ee5375")
 	(paper "A4")
 	(title_block
-		(title "Tiny Tapeout Demoboard to Raspberry Pi/Ribbon Con")
-		(rev "1.0")
+		(title "Tiny Tapeout Demoboard to Raspberry Pi, direct on the GPIO header")
+		(date "2026-09-29")
+		(rev "2.0")
 		(company "Psychogenic Technologies")
 		(comment 1 "(C) 2024 Pat Deegan")
 	)
@@ -583,8 +584,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 33.02 20.32 180)
+				(pin no_connect line
+					(at 33.02 17.78 180)
 					(length 2.54)
 					(hide yes)
 					(name "3V3"
@@ -13802,6 +13803,10 @@
 		)
 		(uuid "ffcfddfe-3307-437d-bc52-bbaa75e10b82")
 	)
+	(no_connect
+		(at 156.21 53.34)
+		(uuid "af5bb026-7f57-47ea-8f77-c24294cb125d")
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 58.42 160.02 270)
@@ -13887,10 +13892,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "08fb988b-2e5c-4f3d-b2cf-c2ab9d7ceae6")
 		(property "Reference" "C1"
 			(at 243.6241 110.7714 0)
@@ -14523,7 +14528,7 @@
 				)
 			)
 		)
-		(property "Value" "10129382-912001BLF"
+		(property "Value" "61301221021"
 			(at 172.72 124.1368 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14533,7 +14538,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TinyTapeout:PinHeader_2x06_P2.54mm_PMODPeriph2B_UNDERVERT"
+		(property "Footprint" "RaspmodDirect:PinHeader_2x06_P2.54mm_PMODPeriph2B_TopRA_Mirror"
 			(at 173.99 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -14544,7 +14549,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/10129382.pdf"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61301221021.pdf"
 			(at 174.625 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -14555,7 +14560,7 @@
 				)
 			)
 		)
-		(property "Description" "Male PMOD Peripheral connector"
+		(property "Description" "Male PMOD peripheral connector, right angle, on top"
 			(at 172.72 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -14985,10 +14990,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "27a39980-35a1-4b48-a614-29fbbe4f65a5")
 		(property "Reference" "R2"
@@ -15797,7 +15802,7 @@
 				)
 			)
 		)
-		(property "Value" "Raspberry_Pi_4"
+		(property "Value" "CS25582-40G-M36-0A"
 			(at 123.19 43.9998 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15807,7 +15812,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical"
+		(property "Footprint" "RaspmodDirect:PinSocket_2x20_P2.54mm_SMD_CS25582_Under"
 			(at 193.294 118.618 0)
 			(hide yes)
 			(show_name no)
@@ -15819,7 +15824,7 @@
 				(justify left)
 			)
 		)
-		(property "Datasheet" "https://datasheets.raspberrypi.com/rpi4/raspberry-pi-4-datasheet.pdf"
+		(property "Datasheet" "https://www.adafruit.com/product/2187"
 			(at 138.938 103.378 0)
 			(hide yes)
 			(show_name no)
@@ -15831,7 +15836,7 @@
 				(justify left)
 			)
 		)
-		(property "Description" "Raspberry Pi 4 Model B"
+		(property "Description" "Raspberry Pi GPIO socket, SMT, 3.8 mm, on the underside"
 			(at 138.938 100.838 0)
 			(hide yes)
 			(show_name no)
@@ -16350,10 +16355,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "5313a338-85aa-4454-afdd-15189e69e3e3")
 		(property "Reference" "J10"
 			(at 257.302 88.8422 0)
@@ -17196,7 +17201,7 @@
 				)
 			)
 		)
-		(property "Value" "10129382-912001BLF"
+		(property "Value" "61301221021"
 			(at 73.66 124.1368 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17206,7 +17211,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TinyTapeout:PinHeader_2x06_P2.54mm_PMODPeriph2B_UNDERVERT"
+		(property "Footprint" "RaspmodDirect:PinHeader_2x06_P2.54mm_PMODPeriph2B_TopRA_Mirror"
 			(at 74.93 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -17217,7 +17222,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/10129382.pdf"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61301221021.pdf"
 			(at 75.565 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -17228,7 +17233,7 @@
 				)
 			)
 		)
-		(property "Description" "Male PMOD Peripheral connector"
+		(property "Description" "Male PMOD peripheral connector, right angle, on top"
 			(at 73.66 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -18122,10 +18127,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "814c1107-a254-4cec-8f37-4f713555bd71")
 		(property "Reference" "R1"
@@ -18809,10 +18814,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a6c9dc5e-af0a-4f17-a65b-4545d0c8ab83")
 		(property "Reference" "SW1"
 			(at 233.68 114.3 0)
@@ -19034,9 +19039,9 @@
 		(body_style 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board yes)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b7bfc170-d1a9-4503-9a48-ca31c5234e3e")
 		(property "Reference" "FID3"
@@ -19567,7 +19572,7 @@
 				)
 			)
 		)
-		(property "Value" "10129382-912001BLF"
+		(property "Value" "61301221021"
 			(at 123.19 124.1368 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19577,7 +19582,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TinyTapeout:PinHeader_2x06_P2.54mm_PMODPeriph2B_UNDERVERT"
+		(property "Footprint" "RaspmodDirect:PinHeader_2x06_P2.54mm_PMODPeriph2B_TopRA_Mirror"
 			(at 124.46 144.78 0)
 			(hide yes)
 			(show_name no)
@@ -19588,7 +19593,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/10129382.pdf"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/61301221021.pdf"
 			(at 125.095 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -19599,7 +19604,7 @@
 				)
 			)
 		)
-		(property "Description" "Male PMOD Peripheral connector"
+		(property "Description" "Male PMOD peripheral connector, right angle, on top"
 			(at 123.19 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -19717,10 +19722,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "eeff40de-9565-46c6-86f8-7bae32d15883")
 		(property "Reference" "J9"
 			(at 18.415 90.6963 0)
