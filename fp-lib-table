@@ -1,4 +1,5 @@
 (fp_lib_table
   (version 7)
   (lib (name "TinyTapeout")(type "KiCad")(uri "${KIPRJMOD}/tinytapeout-kicad-libs/footprints/TinyTapeout.pretty")(options "")(descr ""))
+  (lib (name "RaspmodDirect")(type "KiCad")(uri "${KIPRJMOD}/RaspmodDirect.pretty")(options "")(descr "The direct-on-GPIO variant's socket and right-angle plugs"))
 )

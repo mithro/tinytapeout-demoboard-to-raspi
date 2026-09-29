@@ -41,3 +41,6 @@ fp-info-cache
 
 # Local project settings
 *.kicad_prl
+
+# Scratch: DRC and ERC reports, upstream copies for scripts/check_direct.py
+tmp/
